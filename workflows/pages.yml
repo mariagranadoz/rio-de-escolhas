@@ -1,8 +1,11 @@
-name: Deploy static site to GitHub Pages
+name: Deploy static content to Pages
 
 on:
+  # Runs on pushes targeting the default branch
   push:
-    branches: [main]
+    branches: ["main"]
+
+  # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
 permissions:
@@ -11,8 +14,8 @@ permissions:
   id-token: write
 
 concurrency:
-  group: pages
-  cancel-in-progress: true
+  group: "pages"
+  cancel-in-progress: false
 
 jobs:
   deploy:
@@ -23,15 +26,13 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-
-      - name: Configure GitHub Pages
+      - name: Setup Pages
         uses: actions/configure-pages@v5
-
-      - name: Upload site artifact
+      - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: .
-
+          # Upload entire repository
+          path: '.'
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
