@@ -1,0 +1,739 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+    <meta name="theme-color" content="#f7f8f2">
+    <meta name="description" content="Seis perguntas. Uma gota. Uma jornada de reflexão sobre suas escolhas, inspirada na ética de Aristóteles.">
+    <title>Rio de Escolhas — Sua vida dá o tom</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 48'%3E%3Cpath d='M20 2C17 14 5 25 5 32a15 15 0 0 0 30 0C35 25 23 14 20 2Z' fill='%232c5141'/%3E%3C/svg%3E">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#question-panel">
+      Ir para a pergunta
+    </a>
+    <svg class="svg-definitions" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <symbol id="i-info" viewBox="0 0 24 24">
+          <circle cx="12" cy="12" r="9"/>
+          <path d="M12 11v6M12 7h.01"/>
+        </symbol>
+        <symbol id="i-reset" viewBox="0 0 24 24">
+          <path d="M3 10a8 8 0 1 1 2 8M3 4v6h6"/>
+        </symbol>
+        <symbol id="i-arrow" viewBox="0 0 24 24">
+          <path d="M4 12h16m-6-6 6 6-6 6"/>
+        </symbol>
+        <symbol id="i-back" viewBox="0 0 24 24">
+          <path d="M20 12H4m6-6-6 6 6 6"/>
+        </symbol>
+        <symbol id="i-down" viewBox="0 0 24 24">
+          <path d="M12 3v17m-6-6 6 6 6-6"/>
+        </symbol>
+        <symbol id="i-check" viewBox="0 0 24 24">
+          <path d="m5 12 4 4L19 6"/>
+        </symbol>
+        <symbol id="i-close" viewBox="0 0 24 24">
+          <path d="m6 6 12 12M6 18 18 6"/>
+        </symbol>
+        <symbol id="i-cloud" viewBox="0 0 24 24">
+          <path d="M6 19h12a5 5 0 0 0 .2-10A7 7 0 0 0 5 9a5 5 0 0 0 1 10Z"/>
+        </symbol>
+        <symbol id="i-leaf" viewBox="0 0 24 24">
+          <path d="M20 3C6 1 2 8 5 14s14 5 15-11ZM3 21 15 9M9 15v5"/>
+        </symbol>
+        <symbol id="i-lock" viewBox="0 0 24 24">
+          <rect x="6" y="10" width="12" height="11" rx="3"/>
+          <path d="M9 10V6a3 3 0 0 1 6 0v4m-3 5v2"/>
+        </symbol>
+        <symbol id="i-compass" viewBox="0 0 24 24">
+          <circle cx="12" cy="12" r="9"/>
+          <path d="m16 8-2 6-6 2 2-6 6-2Z"/>
+        </symbol>
+        <symbol id="i-scale" viewBox="0 0 24 24">
+          <path d="M12 3v18m-5 0h10M4 7h16M6 7l-4 8h8L6 7Zm12 0-4 8h8l-4-8Z"/>
+        </symbol>
+        <symbol id="i-mountain" viewBox="0 0 24 24">
+          <path d="m2 20 8-15 5 8 3-5 4 12H2Zm5-10 3 2 2-2"/>
+        </symbol>
+        <symbol id="i-repeat" viewBox="0 0 24 24">
+          <path d="M3 10V5h5m-5 5a9 9 0 0 1 16-5M21 14v5h-5m5-5a9 9 0 0 1-16 5"/>
+        </symbol>
+        <symbol id="i-heart" viewBox="0 0 24 24">
+          <path d="M20 5a5 5 0 0 0-8 1 5 5 0 0 0-8-1c-5 5 3 11 8 15 5-4 13-10 8-15Z"/>
+        </symbol>
+        <symbol id="i-sun" viewBox="0 0 24 24">
+          <circle cx="12" cy="12" r="4"/>
+          <path d="M12 1v2m0 18v2M1 12h2m18 0h2M4 4l2 2m12 12 2 2M4 20l2-2M18 6l2-2"/>
+        </symbol>
+        <symbol id="i-book" viewBox="0 0 24 24">
+          <path d="M12 6C8 3 5 3 2 4v15c4-1 7 0 10 2 3-2 6-3 10-2V4c-3-1-6-1-10 2Zm0 0v15"/>
+        </symbol>
+      </defs>
+    </svg>
+    <div class="site-shell">
+      <header class="site-header">
+        <div class="brand" aria-label="Rio de Escolhas">
+          <span class="brand-mark">
+            <svg viewBox="0 0 40 48" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+              <path d="M20 3C17 13 8 22 8 29a12 12 0 0 0 24 0C32 22 23 13 20 3Z"/>
+              <path d="M14 29q0 5 6 7M3 43q17 6 34 0"/>
+            </svg>
+          </span>
+          <span class="brand-name">
+            Rio
+            <span>
+              de escolhas
+            </span>
+          </span>
+        </div>
+        <span class="header-caption">
+          FILOSOFIA QUE ENCONTRA A VIDA
+        </span>
+        <nav class="header-actions" aria-label="Ações do site">
+          <button type="button" class="about-button" id="about-button" aria-label="Como funciona">
+            <svg class="icon" aria-hidden="true">
+              <use href="#i-info"/>
+            </svg>
+            <span>
+              Como funciona
+            </span>
+          </button>
+          <span class="header-divider">
+          </span>
+          <button type="button" class="icon-button" id="restart-button" aria-label="Recomeçar jornada" title="Recomeçar jornada" disabled>
+            <svg class="icon" aria-hidden="true">
+              <use href="#i-reset"/>
+            </svg>
+          </button>
+        </nav>
+      </header>
+      <main>
+        <section class="intro" aria-labelledby="main-title">
+          <div>
+            <div class="eyebrow intro-eyebrow">
+              <span class="tiny-line">
+              </span>
+              UMA JORNADA, A SUA
+            </div>
+            <h1 id="main-title">
+              Sua vida dá
+              <em>
+                o tom.
+              </em>
+            </h1>
+            <p>
+              Seis perguntas. Uma gota. O caminho das suas escolhas.
+            </p>
+          </div>
+          <div class="intro-aside">
+            <svg class="icon" aria-hidden="true">
+              <use href="#i-cloud"/>
+            </svg>
+            <span>
+              Tudo começa na nuvem.
+              <br>
+              <strong>
+                O próximo passo é seu.
+              </strong>
+            </span>
+          </div>
+        </section>
+        <div class="experience-grid">
+          <section class="map-panel" aria-label="Mapa da jornada">
+            <div class="map-stage">
+              <div class="map-toolbar">
+                <span class="map-kicker">
+                  O SEU PERCURSO
+                </span>
+                <span class="map-counter" id="map-counter">
+                  0 de 6 escolhas
+                </span>
+              </div>
+              <svg id="journey-map" viewBox="0 0 900 590" role="img" aria-labelledby="map-title map-desc" xmlns="http://www.w3.org/2000/svg">
+                <title id="map-title">
+                  O seu percurso no Rio de Escolhas
+                </title>
+                <desc id="map-desc">
+                  Uma nuvem e uma gota seguem uma trilha de seis paradas entre árvores e pontes, até um rio sinuoso.
+                </desc>
+                <defs>
+                  <pattern id="map-grid" width="70" height="70" patternUnits="userSpaceOnUse">
+                    <path d="M70 0H0V70" fill="none" stroke="#e0e6d5" stroke-width="1"/>
+                  </pattern>
+                  <g id="pine">
+                    <path d="M0 0v41" stroke="#947a54" stroke-width="3"/>
+                    <path d="M0-11-13 15H13Z" fill="#87a87e"/>
+                    <path d="M0-11v26H13Z" fill="#789975"/>
+                    <path d="M0 3-16 32H16Z" fill="#8aa980"/>
+                    <path d="M0 3v29H16Z" fill="#729572"/>
+                  </g>
+                  <g id="pine-cluster">
+                    <use href="#pine" transform="translate(-22 -6) scale(.8)"/>
+                    <use href="#pine" transform="translate(7 5) scale(.95)"/>
+                    <use href="#pine" transform="translate(29 -12) scale(.85)"/>
+                  </g>
+                  <g id="round-tree">
+                    <path d="M0 4v44" stroke="#927b58" stroke-width="3"/>
+                    <circle cx="-7" cy="13" r="13" fill="#a2b992"/>
+                    <circle cx="6" cy="7" r="16" fill="#a2b992"/>
+                    <circle cx="7" cy="19" r="13" fill="#a2b992"/>
+                    <path d="M0 30V9m0 17-9-11m9 5 8-10" fill="none" stroke="#88a37a" stroke-width="1.4"/>
+                  </g>
+                  <path id="river-curve" d="M-30 587C74 568 202 509 235 424C266 349 213 299 215 238C205 175 253 115 317 128C391 133 430 197 433 254C438 318 407 350 430 413C451 475 505 488 552 455C604 419 599 353 644 311C691 266 735 272 785 286C834 300 871 321 929 305"/>
+                  <path id="journey-path" d="M123 132C103 172 112 204 140 231C175 275 126 319 126 350C98 405 182 485 308 470C374 455 379 409 365 352C340 293 421 245 480 207C504 190 520 177 537 165C600 133 632 119 682 143C711 151 736 174 749 194"/>
+                  <path id="drop-outline" d="M0-39C-6-19-28 9-28 23a28 28 0 0 0 56 0C28 9 6-19 0-39Z"/>
+                </defs>
+                <rect width="900" height="590" fill="#e9eedf"/>
+                <path d="M-30 65C59 6 156 63 182 115C209 167 152 225 177 311C215 390 88 361 80 426C75 490-24 483-25 429Z" fill="#dbe5cb"/>
+                <path d="M757-20C692 40 757 127 798 145C848 169 890 140 930 97V-20Z" fill="#dce6ce"/>
+                <path d="M319 610C320 533 354 476 405 494C453 511 483 543 527 523C578 500 608 470 665 500C741 548 744 488 805 447C849 416 893 422 930 447V620Z" fill="#d9e3cb"/>
+                <g fill="none" stroke="#c7d7b7" stroke-width="1.1">
+                  <path d="M-30 91C33 42 128 66 147 119C168 170 102 191 151 274M-20 105C44 61 119 85 125 125C135 165 86 188 111 222"/>
+                  <path d="M770-12C721 40 795 117 830 127C870 137 899 113 921 99M356 590C351 530 380 512 414 526C455 544 482 567 533 550C601 525 613 500 670 534C723 566 753 533 794 508C847 474 875 523 914 493M383 603C374 555 397 542 432 555C467 568 485 596 545 577C607 556 626 532 676 553C732 578 768 554 799 528C834 500 878 547 916 522"/>
+                  <path d="M-14 389C42 430 25 355 87 340M-24 417C30 456 35 388 66 382M-24 405C11 452 37 421 49 409"/>
+                </g>
+                <rect width="900" height="590" fill="url(#map-grid)"/>
+                <use href="#river-curve" fill="none" stroke="#b1cbb1" stroke-width="73"/>
+                <use href="#river-curve" fill="none" stroke="#87c3d2" stroke-width="61"/>
+                <use href="#river-curve" fill="none" stroke="#a8d7df" stroke-width="48"/>
+                <g fill="none" stroke="#e5f5f0" stroke-width="2" stroke-linecap="round">
+                  <path d="M51 548q29-8 47-22M112 526l-11 7M211 458q8-19 14-45M241 378l1-15M242 197q8-17 24-24M353 134q11 2 23 10M399 181l7 13M431 311q-3 13-2 25M453 442q13 11 27 13M582 420l9-11M593 371q9-14 13-30M686 282q15-3 32-1M782 283l17 3M833 313l24 3"/>
+                </g>
+                <use href="#journey-path" fill="none" stroke="#fbfcf5" stroke-width="8" stroke-linecap="round"/>
+                <path id="completed-trail" d="M123 132C103 172 112 204 140 231C175 275 126 319 126 350C98 405 182 485 308 470C374 455 379 409 365 352C340 293 421 245 480 207C504 190 520 177 537 165C600 133 632 119 682 143C711 151 736 174 749 194" fill="none" stroke="#9bad88" stroke-width="3" stroke-linecap="round" stroke-dasharray="0 2000"/>
+                <use href="#journey-path" fill="none" stroke="#aab99a" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="1 9"/>
+                <g transform="translate(426 246) rotate(-26)">
+                  <rect x="-45" y="-19" width="90" height="38" fill="#d9b58a" stroke="#9b7955" stroke-width="3"/>
+                  <g stroke="#ac865e" stroke-width="2">
+                    <path d="M-40 -18v36"/>
+                    <path d="M-28 -18v36"/>
+                    <path d="M-16 -18v36"/>
+                    <path d="M-4 -18v36"/>
+                    <path d="M8 -18v36"/>
+                    <path d="M20 -18v36"/>
+                    <path d="M32 -18v36"/>
+                    <path d="M44 -18v36"/>
+                  </g>
+                  <path d="M-51-20H51M-51 20H51" stroke="#866746" stroke-width="4"/>
+                </g>
+                <g transform="translate(205 445) rotate(38)">
+                  <rect x="-45" y="-19" width="90" height="38" fill="#d9b58a" stroke="#9b7955" stroke-width="3"/>
+                  <g stroke="#ac865e" stroke-width="2">
+                    <path d="M-40 -18v36"/>
+                    <path d="M-28 -18v36"/>
+                    <path d="M-16 -18v36"/>
+                    <path d="M-4 -18v36"/>
+                    <path d="M8 -18v36"/>
+                    <path d="M20 -18v36"/>
+                    <path d="M32 -18v36"/>
+                    <path d="M44 -18v36"/>
+                  </g>
+                  <path d="M-51-20H51M-51 20H51" stroke="#866746" stroke-width="4"/>
+                </g>
+                <use href="#pine-cluster" transform="translate(87 285) scale(1)"/>
+                <use href="#pine-cluster" transform="translate(322 70) scale(1)"/>
+                <use href="#pine-cluster" transform="translate(636 67) scale(0.82)"/>
+                <use href="#pine-cluster" transform="translate(509 473) scale(1)"/>
+                <use href="#pine-cluster" transform="translate(707 457) scale(1.08)"/>
+                <use href="#round-tree" transform="translate(43 116)"/>
+                <use href="#round-tree" transform="translate(826 236) scale(.96)"/>
+                <g transform="translate(274 159) rotate(-31)">
+                  <ellipse cx="13" cy="8" rx="23" ry="5" fill="#e4b371"/>
+                  <path d="M-12 8h51" stroke="#a9814c" stroke-width="2"/>
+                  <path d="m-4-13 30 43" stroke="#6c9281" stroke-width="4"/>
+                  <path d="m-4-13-4 2 6 8 5-2M26 30l4-2-7-8-4 2" stroke="#507b70" stroke-width="4"/>
+                </g>
+                <g transform="translate(635 154)">
+                  <path d="M3-16v44" stroke="#9b7d53" stroke-width="4"/>
+                  <path d="M-20-14H25L32-8 25-2H-20Z" fill="#e4c48e"/>
+                  <path d="M-19 4H22v13h-41l-7-6Z" fill="#bb9056"/>
+                </g>
+                <g transform="translate(100 466)">
+                  <ellipse cx="0" cy="7" rx="45" ry="5" fill="#bac9a8"/>
+                  <path d="M-39 3-12-46 42 3Z" fill="#dba665"/>
+                  <path d="M-12-46 16-38 47 3H17Z" fill="#efc182"/>
+                  <path d="M-25 3-12-28 7 3Z" fill="#53715c"/>
+                  <path d="M-12-28-12 3H7Z" fill="#384f42"/>
+                </g>
+                <g transform="translate(457 533)">
+                  <path d="m-19 6 28 6m-29 0 29-7" stroke="#9c7b50" stroke-width="6" stroke-linecap="round"/>
+                  <path d="M-12 5C-19-7-4-17-5-28C17-11 13 2 5 7Z" fill="#ecb86e"/>
+                  <path d="M-7 6C-10-3-1-6-2-15C6-8 8 1 0 7Z" fill="#f5d487"/>
+                </g>
+                <g transform="translate(805 469)">
+                  <path d="M-48 0-2-63 39 0Z" fill="#99a48b"/>
+                  <path d="m-14-47 12-16 11 16-11-4Z" fill="#fffef5"/>
+                  <path d="M-2 0 32-75 78 0Z" fill="#b2b99e"/>
+                  <path d="m17-45 15-30 14 24-14-5Z" fill="#fffef5"/>
+                </g>
+                <g fill="none" stroke="#78977a" stroke-width="1.7" stroke-linecap="round">
+                  <path d="M395 67q4-5 8 0 3-5 7 0M707 72q6-7 12 0 6-7 12 0M720 85q4-5 8 0 4-5 8 0"/>
+                </g>
+                <g fill="#bccca4">
+                  <circle cx="211" cy="70" r="2"/>
+                  <circle cx="220" cy="76" r="2"/>
+                  <circle cx="213" cy="80" r="2"/>
+                  <circle cx="69" cy="212" r="2"/>
+                  <circle cx="76" cy="216" r="2"/>
+                  <circle cx="589" cy="514" r="2"/>
+                  <circle cx="597" cy="510" r="2"/>
+                  <circle cx="587" cy="523" r="2"/>
+                </g>
+                <text class="land-label" x="78" y="503" fill="#839578" font-family="Georgia,serif" font-size="15" font-style="italic">
+                  um passo de cada vez
+                </text>
+                <text x="496" y="408" transform="rotate(-55 496 408)" fill="#45859b" font-size="10" letter-spacing="4">
+                  RIO DA VIDA
+                </text>
+                <g transform="translate(821 518)">
+                  <circle r="22" fill="none" stroke="#91aa85" stroke-width="1"/>
+                  <circle r="17" fill="none" stroke="#acbea0" stroke-width="1"/>
+                  <path d="M0-15-5 1H5Z" fill="#61806a"/>
+                  <path d="M0 15-5 1H5Z" fill="#fffef4" stroke="#9cb092"/>
+                  <text y="-28" text-anchor="middle" fill="#688560" font-size="9">
+                    N
+                  </text>
+                </g>
+                <g id="station-1" class="station">
+                  <title>
+                    Parada 1: Prudência
+                  </title>
+                  <circle class="station-halo" cx="140" cy="231" r="25" fill="none" stroke="#4f744e" stroke-width="1.5" stroke-dasharray="3 4" visibility="hidden"/>
+                  <circle class="station-disc" cx="140" cy="231" r="17" fill="#f9faf4" stroke="#b1c2a6" stroke-width="2"/>
+                  <text class="station-number" x="140" y="237" text-anchor="middle" fill="#4e6748" font-size="16" font-weight="600">
+                    01
+                  </text>
+                  <text class="station-label" x="180" y="240" text-anchor="start" fill="#6b7f62" font-size="13">
+                    Prudência
+                  </text>
+                </g>
+                <g id="station-2" class="station">
+                  <title>
+                    Parada 2: Equilíbrio
+                  </title>
+                  <circle class="station-halo" cx="126" cy="350" r="25" fill="none" stroke="#4f744e" stroke-width="1.5" stroke-dasharray="3 4" visibility="hidden"/>
+                  <circle class="station-disc" cx="126" cy="350" r="17" fill="#f9faf4" stroke="#b1c2a6" stroke-width="2"/>
+                  <text class="station-number" x="126" y="356" text-anchor="middle" fill="#4e6748" font-size="16" font-weight="600">
+                    02
+                  </text>
+                  <text class="station-label" x="52" y="390" text-anchor="start" fill="#6b7f62" font-size="13">
+                    Equilíbrio
+                  </text>
+                </g>
+                <g id="station-3" class="station">
+                  <title>
+                    Parada 3: Coragem
+                  </title>
+                  <circle class="station-halo" cx="308" cy="470" r="25" fill="none" stroke="#4f744e" stroke-width="1.5" stroke-dasharray="3 4" visibility="hidden"/>
+                  <circle class="station-disc" cx="308" cy="470" r="17" fill="#f9faf4" stroke="#b1c2a6" stroke-width="2"/>
+                  <text class="station-number" x="308" y="476" text-anchor="middle" fill="#4e6748" font-size="16" font-weight="600">
+                    03
+                  </text>
+                  <text class="station-label" x="278" y="515" text-anchor="start" fill="#6b7f62" font-size="13">
+                    Coragem
+                  </text>
+                </g>
+                <g id="station-4" class="station">
+                  <title>
+                    Parada 4: Hábitos
+                  </title>
+                  <circle class="station-halo" cx="365" cy="352" r="25" fill="none" stroke="#4f744e" stroke-width="1.5" stroke-dasharray="3 4" visibility="hidden"/>
+                  <circle class="station-disc" cx="365" cy="352" r="17" fill="#f9faf4" stroke="#b1c2a6" stroke-width="2"/>
+                  <text class="station-number" x="365" y="358" text-anchor="middle" fill="#4e6748" font-size="16" font-weight="600">
+                    04
+                  </text>
+                  <text class="station-label" x="345" y="317" text-anchor="end" fill="#6b7f62" font-size="13">
+                    Hábitos
+                  </text>
+                </g>
+                <g id="station-5" class="station">
+                  <title>
+                    Parada 5: Amizade
+                  </title>
+                  <circle class="station-halo" cx="537" cy="165" r="25" fill="none" stroke="#4f744e" stroke-width="1.5" stroke-dasharray="3 4" visibility="hidden"/>
+                  <circle class="station-disc" cx="537" cy="165" r="17" fill="#f9faf4" stroke="#b1c2a6" stroke-width="2"/>
+                  <text class="station-number" x="537" y="171" text-anchor="middle" fill="#4e6748" font-size="16" font-weight="600">
+                    05
+                  </text>
+                  <text class="station-label" x="540" y="204" text-anchor="start" fill="#6b7f62" font-size="13">
+                    Amizade
+                  </text>
+                </g>
+                <g id="station-6" class="station">
+                  <title>
+                    Parada 6: Justiça
+                  </title>
+                  <circle class="station-halo" cx="749" cy="194" r="25" fill="none" stroke="#4f744e" stroke-width="1.5" stroke-dasharray="3 4" visibility="hidden"/>
+                  <circle class="station-disc" cx="749" cy="194" r="17" fill="#f9faf4" stroke="#b1c2a6" stroke-width="2"/>
+                  <text class="station-number" x="749" y="200" text-anchor="middle" fill="#4e6748" font-size="16" font-weight="600">
+                    06
+                  </text>
+                  <text class="station-label" x="786" y="204" text-anchor="start" fill="#6b7f62" font-size="13">
+                    Justiça
+                  </text>
+                </g>
+                <g id="splash" transform="translate(749 285)" visibility="hidden">
+                  <ellipse class="ring-one" rx="10" ry="4" fill="none" stroke="#fffef8" stroke-width="2"/>
+                  <ellipse class="ring-two" rx="6" ry="3" fill="none" stroke="#fffef8" stroke-width="2"/>
+                  <g id="splash-particles"/>
+                </g>
+                <g id="river-keepsake" transform="translate(749 285)" visibility="hidden">
+                  <ellipse rx="30" ry="9" fill="none" stroke="#f4fff8" stroke-width="2"/>
+                  <ellipse rx="42" ry="14" fill="none" stroke="#d8eeea"/>
+                  <g transform="translate(0 -8) scale(.42)">
+                    <use class="keepsake-body" href="#drop-outline" fill="#0000ff" stroke="#fffef8" stroke-width="3"/>
+                  </g>
+                </g>
+                <g id="traveler" transform="translate(123 132)">
+                  <g id="traveler-cloud" class="cloud-breathe" transform="translate(0 -81)">
+                    <path d="M-37 25C-66 25-64-8-42-12C-44-31-19-39-7-27C11-43 42-27 41-9C66-7 69 26 45 28Z" fill="#dce3d2"/>
+                    <path d="M-38 22C-64 22-62-8-40-13C-39-32-18-38-5-27C13-43 44-27 43-10C65-7 68 24 42 24Z" fill="#fffef8"/>
+                    <path d="M-34-14q8-14 19-10" fill="none" stroke="#edf1e5" stroke-width="4" stroke-linecap="round"/>
+                  </g>
+                  <g id="drop-position" transform="translate(0 -29)">
+                    <g id="drop-scale" transform="scale(.38)">
+                      <use class="drop-body" href="#drop-outline" fill="#fffef8" stroke="#8fa48a" stroke-width="2.2"/>
+                      <path class="drop-glint" d="M-15 10c-5 9-4 18 3 23" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" visibility="hidden"/>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+              <span class="map-note" id="map-note">
+                Uma gota começa a se formar...
+              </span>
+            </div>
+            <div class="map-footer">
+              <div class="current-color">
+                <span class="eyebrow">
+                  SUA GOTA
+                </span>
+                <div class="color-status" id="color-status">
+                  <i class="color-dot empty" id="current-dot" aria-hidden="true">
+                  </i>
+                  <span id="color-name">
+                    Ainda na nuvem
+                  </span>
+                </div>
+              </div>
+              <button type="button" class="legend-button" id="legend-button" aria-label="Entenda as cores da gota">
+                <span class="legend-dots" aria-hidden="true">
+                  <i class="dot-blue">
+                  </i>
+                  <i class="dot-yellow">
+                  </i>
+                  <i class="dot-red">
+                  </i>
+                </span>
+                <span>
+                  Entenda as cores
+                  <svg class="icon" aria-hidden="true">
+                    <use href="#i-info"/>
+                  </svg>
+                </span>
+              </button>
+            </div>
+          </section>
+          <section class="question-panel" id="question-panel" aria-label="Perguntas da jornada" tabindex="-1">
+            <div class="panel-topline">
+              <span class="eyebrow" id="step-caption">
+                PARADA 01 DE 06
+              </span>
+              <span class="chapter-icon" id="chapter-icon">
+                <svg class="icon" aria-hidden="true">
+                  <use href="#i-compass"/>
+                </svg>
+              </span>
+            </div>
+            <div class="progress-segments" id="progress-segments" role="progressbar" aria-label="Perguntas respondidas" aria-valuemin="0" aria-valuemax="6" aria-valuenow="0">
+              <span>
+              </span>
+              <span>
+              </span>
+              <span>
+              </span>
+              <span>
+              </span>
+              <span>
+              </span>
+              <span>
+              </span>
+            </div>
+            <div id="question-content">
+              <noscript>
+                <div class="noscript-note">
+                  <h2>
+                    Ative o JavaScript para começar.
+                  </h2>
+                  <p>
+                    Esta jornada interativa precisa do JavaScript do navegador para mostrar as seis perguntas e movimentar sua gota.
+                  </p>
+                </div>
+              </noscript>
+            </div>
+          </section>
+        </div>
+        <div class="bottom-note">
+          <p>
+            <svg class="icon" aria-hidden="true">
+              <use href="#i-leaf"/>
+            </svg>
+            Inspirado em Aristóteles. Movido pelas suas escolhas.
+          </p>
+          <p>
+            <svg class="icon" aria-hidden="true">
+              <use href="#i-lock"/>
+            </svg>
+            Suas respostas ficam só neste navegador.
+          </p>
+        </div>
+      </main>
+      <footer class="site-footer">
+        <div class="footer-message">
+          Não é sobre chegar perfeito. É sobre seguir consciente.
+        </div>
+        <div class="project-credits">
+          <span class="eyebrow">
+            DESENVOLVIDO PELOS ALUNOS
+          </span>
+          <p>
+            Milena, Maria Isabel, Leticia, João Gabriel Homen, Ana Carolina e Gustavo.
+          </p>
+          <p class="teacher">
+            Professor:
+            <strong>
+              Thiago
+            </strong>
+          </p>
+        </div>
+        <span class="footer-sign">
+          RIO DE ESCOLHAS
+          <span>
+            /
+          </span>
+          EXPERIÊNCIA INTERATIVA
+        </span>
+      </footer>
+    </div>
+    <div class="sr-only" id="announcer" role="status" aria-live="polite" aria-atomic="true">
+    </div>
+    <dialog class="info-dialog" id="info-dialog" aria-labelledby="info-title">
+      <div class="dialog-header">
+        <span class="eyebrow">
+          SOBRE A JORNADA
+        </span>
+        <button type="button" class="icon-button" data-close-dialog aria-label="Fechar explicação">
+          <svg class="icon" aria-hidden="true">
+            <use href="#i-close"/>
+          </svg>
+        </button>
+      </div>
+      <div class="dialog-body">
+        <h2 id="info-title">
+          Pequenas escolhas.
+          <br>
+          Um caminho só seu.
+        </h2>
+        <p>
+          Responda a seis perguntas sobre o seu dia a dia. A cada resposta confirmada, a nuvem avança pela trilha e a sua gota se forma. No final, você escolhe o momento de deixá-la cair no rio.
+        </p>
+        <h3>
+          O que significa cada cor?
+        </h3>
+        <p>
+          A cor da gota considera a soma das respostas confirmadas até aquele momento. As cores são sempre puras: sem gradiente, mistura ou transição entre tons.
+        </p>
+        <div class="color-explanation">
+          <div>
+            <i class="dot-blue">
+            </i>
+            <span>
+              <strong>
+                Azul
+              </strong>
+              <small>
+                Maior aproximação às ideias da atividade
+              </small>
+            </span>
+            <b>
+              9–12 pontos
+            </b>
+          </div>
+          <div>
+            <i class="dot-yellow">
+            </i>
+            <span>
+              <strong>
+                Amarelo
+              </strong>
+              <small>
+                Aproximação parcial
+              </small>
+            </span>
+            <b>
+              5–8 pontos
+            </b>
+          </div>
+          <div>
+            <i class="dot-red">
+            </i>
+            <span>
+              <strong>
+                Vermelho
+              </strong>
+              <small>
+                Menor aproximação nesta atividade
+              </small>
+            </span>
+            <b>
+              0–4 pontos
+            </b>
+          </div>
+        </div>
+        <p class="small-copy">
+          Cada resposta vale 0, 1 ou 2 pontos. Durante o percurso, a cor usa a proporção de pontos já possíveis: até 1/3, vermelho; acima de 1/3 até 2/3, amarelo; acima de 2/3, azul. As pequenas marcas da trilha registram a cor de cada resposta individual. A tabela acima mostra as faixas ao concluir as seis perguntas.
+        </p>
+        <div class="gentle-notice">
+          <svg class="icon" aria-hidden="true">
+            <use href="#i-leaf"/>
+          </svg>
+          <p>
+            As perguntas, os pontos e as cores são uma adaptação educativa, não um teste validado nem uma classificação do seu valor como pessoa. Não foram criados por Aristóteles.
+          </p>
+        </div>
+        <h3>
+          A filosofia por trás do caminho
+        </h3>
+        <p>
+          A jornada usa temas de
+          <em>
+            Ética a Nicômaco
+          </em>
+          : prática e hábitos (livro II), coragem e temperança (livro III), justiça em relação ao outro (livro V), prudência (livro VI) e amizade (livro VIII). As situações são simplificações para reflexão, não um resumo completo da obra.
+        </p>
+        <p class="source-links">
+          Texto de referência: Aristóteles, tradução de W. D. Ross,
+          <em>
+            The Internet Classics Archive
+          </em>
+          , MIT.
+          <a href="https://classics.mit.edu/Aristotle/nicomachaen.2.ii.html" target="_blank" rel="noopener noreferrer">
+            Livro II
+          </a>
+          ·
+          <a href="https://classics.mit.edu/Aristotle/nicomachaen.3.iii.html" target="_blank" rel="noopener noreferrer">
+            III
+          </a>
+          ·
+          <a href="https://classics.mit.edu/Aristotle/nicomachaen.5.v.html" target="_blank" rel="noopener noreferrer">
+            V
+          </a>
+          ·
+          <a href="https://classics.mit.edu/Aristotle/nicomachaen.6.vi.html" target="_blank" rel="noopener noreferrer">
+            VI
+          </a>
+          ·
+          <a href="https://classics.mit.edu/Aristotle/nicomachaen.8.viii.html" target="_blank" rel="noopener noreferrer">
+            VIII
+          </a>
+          .
+        </p>
+        <h3>
+          Feito pela nossa equipe
+        </h3>
+        <p>
+          <strong>
+            Alunos:
+          </strong>
+          Milena, Maria Isabel, Leticia, João Gabriel Homen, Ana Carolina e Gustavo.
+          <br>
+          <strong>
+            Professor:
+          </strong>
+          Thiago.
+        </p>
+        <p class="small-copy">
+          Nenhuma resposta é enviada para um servidor. O progresso é salvo localmente quando o navegador permite; recomeçar apaga a jornada atual. Este site funciona sem conexão, exceto ao abrir os links de referência.
+        </p>
+      </div>
+      <div class="dialog-footer">
+        <button type="button" class="primary-button" data-close-dialog>
+          Continuar minha jornada
+          <svg class="icon" aria-hidden="true">
+            <use href="#i-arrow"/>
+          </svg>
+        </button>
+      </div>
+    </dialog>
+    <dialog class="review-dialog" id="review-dialog" aria-labelledby="review-title">
+      <div class="dialog-header">
+        <span class="eyebrow">
+          SEU CAMINHO, SUAS ESCOLHAS
+        </span>
+        <button type="button" class="icon-button" data-close-dialog aria-label="Fechar respostas">
+          <svg class="icon" aria-hidden="true">
+            <use href="#i-close"/>
+          </svg>
+        </button>
+      </div>
+      <div class="dialog-body">
+        <h2 id="review-title">
+          Olhe para o seu percurso.
+        </h2>
+        <p>
+          Cada resposta é um ponto de partida para refletir, não um rótulo.
+        </p>
+        <div id="review-list">
+        </div>
+        <p class="small-copy">
+          Referência dos comentários:
+          <em>
+            Ética a Nicômaco
+          </em>
+          , livros II, III, V, VI e VIII. Consulte os textos em “Como funciona”.
+        </p>
+      </div>
+      <div class="dialog-footer">
+        <button type="button" class="primary-button" data-close-dialog>
+          Voltar ao rio
+          <svg class="icon" aria-hidden="true">
+            <use href="#i-arrow"/>
+          </svg>
+        </button>
+      </div>
+    </dialog>
+    <dialog class="restart-dialog" id="restart-dialog" aria-labelledby="restart-title">
+      <div class="dialog-header">
+        <span class="eyebrow">
+          UM NOVO COMEÇO
+        </span>
+        <button type="button" class="icon-button" data-close-dialog aria-label="Fechar confirmação">
+          <svg class="icon" aria-hidden="true">
+            <use href="#i-close"/>
+          </svg>
+        </button>
+      </div>
+      <div class="dialog-body">
+        <h2 id="restart-title">
+          Começar outra jornada?
+        </h2>
+        <p>
+          As respostas desta jornada serão apagadas deste navegador. Sua próxima gota começa do zero.
+        </p>
+      </div>
+      <div class="restart-actions">
+        <button type="button" class="secondary-button" data-close-dialog>
+          Continuar aqui
+        </button>
+        <button type="button" class="primary-button" id="confirm-restart">
+          Recomeçar
+          <svg class="icon" aria-hidden="true">
+            <use href="#i-reset"/>
+          </svg>
+        </button>
+      </div>
+    </dialog>
+    <script src="script.js" defer></script>
+  </body>
+</html>
